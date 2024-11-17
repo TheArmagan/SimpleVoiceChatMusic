@@ -1,0 +1,18 @@
+name: SimpleVoiceChatMusic
+version: '1.0.0'
+main: dev.klash.simpleVoiceChatMusic.SimpleVoiceChatMusic
+api-version: '1.21'
+authors: [ GavinGoGaming ]
+depend: [ voicechat ]
+description: A port of the SimpleVoiceChatMusic fabric mod for PaperMC.
+commands:
+  music:
+    description: Play music in voice chat.
+    usage: /music <...>
+    permission: simplevoicechatmusic.music
+  music_register_service:
+    description: Register SVCM plugin service.
+permissions:
+  simplevoicechatmusic.music:
+    description: Allows the player to play music in voice chat.
+    default: true
