@@ -19,6 +19,8 @@ import static dev.klash.simpleVoiceChatMusic.util.ModUtils.checkPlayerGroup;
 
 public class BassboostCommand implements Command {
     public int execute(Player player, String[] args) throws Exception {
+        if (args.length != 1) return 1;
+
         float bass = Float.parseFloat(args[0]);
         ModUtils.CheckPlayerGroup result = checkPlayerGroup(player);
         if (result == null) return 1;
